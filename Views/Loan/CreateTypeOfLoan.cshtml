@@ -1,0 +1,89 @@
+﻿@using ActiveFinance1.Data.Model
+@model LoanViewModel
+
+
+@{
+    Layout = "_Staff";
+}
+   
+
+<div class="container">
+
+    <div class="alert alert-danger validation" asp-validation-summary="All"></div>
+    <form enctype="multipart/form-data" asp-action="CreateTypeOfLoan" asp-controller="Loan" method="post" role="form">
+
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="TypeOfLoan.NameOfPackageLoan"></label>
+                <input asp-for="TypeOfLoan.NameOfPackageLoan" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="TypeOfLoan.Description"></label>
+                <input asp-for="TypeOfLoan.Description" class="form-control" />
+            </div>
+
+            <div class="col-md-2">
+                <label asp-for="TypeOfLoan.Interest"></label>
+                <input asp-for="TypeOfLoan.Interest" class="form-control" />
+            </div>
+             <div class="col-md-2">
+                <label asp-for="TypeOfLoan.Stack"></label>
+                <input value="1" asp-for="TypeOfLoan.Stack" type="checkbox" class="form-control" />
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="TypeOfLoan.MinimumLoan"></label>
+                <input asp-for="TypeOfLoan.MinimumLoan" class="form-control" />
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="TypeOfLoan.MaximumLoan"></label>
+                <input asp-for="TypeOfLoan.MaximumLoan" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="TypeOfLoan.Image"></label>
+                <div class="custom-file">
+                    <input asp-for="TypeOfLoan.Image" class="form-control custom-file-input" />
+                    <label class="custom-file-label">Choose File..</label>
+                </div>
+            </div>
+
+
+        </div>
+        <input type="submit" class="btn btn-primary" />
+    </form>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('.custom-file-input').on("change", function () {
+
+                var filename = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(filename);
+
+            });
+
+        });
+    </script>
+
+}
+
+<script>
+
+    if ($('.message').val() == "") {
+        $('.message').hide();
+    }
+
+    if ($('.validation').text().trim() == "") {
+        $('.validation').hide();
+    }
+
+
+    function Forgot() {
+        $('.Forgot').css('display', 'block');
+    }
+
+</script>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<LoanAndTypeViewModel>
+
+
+@{
+        int counter = 0;
+        foreach(var c in Model){
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="~/Images/@c.TypeOfLoan.ImagePath" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@c.TypeOfLoan.NameOfPackageLoan</h5>
+                <p class="card-text">@c.TypeOfLoan.Description</p>
+                <a asp-action="CustomerApply" asp-route-id="@c.TypeOfLoan.RecordId" asp-controller="Customer" class="btn btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </div>
+        counter++;
+
+        if(counter % 3 == 0) {  
+            @Html.Raw("<div class='col-md-12'><hr></div>")
+            }
+    }
+}
+

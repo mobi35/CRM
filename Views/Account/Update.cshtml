@@ -1,0 +1,65 @@
+﻿@using ActiveFinance1.Data.Model
+@model AccountViewModel
+
+
+@{
+    Layout = "_Staff";
+}
+
+
+<div class="container">
+    <input asp-for="UserAccountDetail.Message" style="width:100%;font-size:11px" disabled class="alert alert-danger message" />
+    <div class="alert alert-danger validation" asp-validation-summary="All"></div>
+    <form asp-action="Update" asp-controller="Account" method="post" role="form">
+        @Html.HiddenFor(a => a.UserAccountDetail.RecordId)
+        @Html.HiddenFor(a => a.PersonalAccountDetail.RecordId)
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="UserAccountDetail.AccountId"></label>
+                <input asp-for="UserAccountDetail.AccountId" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="UserAccountDetail.Password"></label>
+                <input asp-for="UserAccountDetail.Password" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="UserAccountDetail.Email"></label>
+                <input asp-for="UserAccountDetail.Email" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="PersonalAccountDetail.FirstName"></label>
+                <input asp-for="PersonalAccountDetail.FirstName" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="PersonalAccountDetail.MiddleName"></label>
+                <input asp-for="PersonalAccountDetail.MiddleName" class="form-control" />
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="PersonalAccountDetail.LastName"></label>
+                <input asp-for="PersonalAccountDetail.LastName" class="form-control" />
+            </div>
+
+        </div>
+        <input type="submit" class="btn btn-primary" />
+    </form>
+</div>
+
+<script>
+
+    if ($('.message').val() == "")
+    {
+      $('.message').hide();
+    }
+
+    if ($('.validation').text().trim() == "")
+    {
+      $('.validation').hide();
+    }
+
+
+    function Forgot() {
+        $('.Forgot').css('display', 'block');
+    }
+
+</script>

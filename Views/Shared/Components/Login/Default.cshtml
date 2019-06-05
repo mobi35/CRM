@@ -1,0 +1,81 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@model UserAccountDetail
+@{
+    if (Startup.IsSessionAvailable && HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null)
+    {
+        <li class="nav-item ">
+            <a asp-action="CustomerMain" asp-controller="Customer" class="nav-link text-dark"><span class="fa fa-user-circle"></span> @HttpContextAccessor.HttpContext.Session.GetString("AccountId")</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item ">
+            <a class="nav-link text-dark" data-toggle="modal" data-target=".bd-example-modal-sm" asp-area="" asp-controller="" asp-action="">Login</a>
+        </li>
+    }
+
+}
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div style="padding:40px;padding-bottom:20px;padding-left:35px;padding-right:35px;">
+                <span style="width:100%;text-align:center;font-size:40px;color:#007bff" class="fa fa-user"></span>
+                <hr />
+                <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
+                    <div class="row">
+
+                        <div style="display:block!important" class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fa fa-user"></span></div>
+                                <input placeholder="Account Id" asp-for="AccountId" class="form-control" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div style="display:block!important" class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fa fa-lock"></span></div>
+                                <input placeholder="Password" type="password" asp-for="Password" class="form-control" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <i><a onclick="Forgot();" href="#">Forgot Password?</a></i>
+                    <hr />
+                    <div class="row">
+
+                        <input type="submit" value="Login" class="btn btn-primary form-control" />
+                    </div>
+
+                </form>
+
+                <div style="display:none;" class="Forgot">
+                    <hr />
+                    <i style="text-align:center;width:100%;">let us recover your account. Please provide us your email address.</i>
+                    <form asp-action="SendEmail" asp-controller="Account" method="post">
+                        <div class="row">
+                            <div style="display:block!important" class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fa fa-envelope"></span></div>
+                                    <input required placeholder="Enter your email address" asp-for="Email" type="email" class="form-control" />
+
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-primary form-control" value="Reset" />
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

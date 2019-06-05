@@ -1,0 +1,214 @@
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.deps.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.dev.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csprojAssemblyReference.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CoreCompileInputs.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfoInputs.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.input.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.output.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorCoreGenerate.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CopyComplete
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Recover.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Staff.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Staff\AdminDashboard.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Carousel.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\ListOfUsers.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\ListOfBranch.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\CreateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfTypeOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\UpdateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoanPackage.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApply.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\LoanApprovalTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\RatingControl\Default.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.deps.json
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.json
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.dev.json
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.dll
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.pdb
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.dll
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CoreCompileInputs.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfoInputs.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfo.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.input.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.output.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorCoreGenerate.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Create.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\ListOfUsers.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Recover.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Update.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Create.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\ListOfBranch.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Update.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApply.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\CreateTypeOfLoan.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfLoans.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfTypeOfLoans.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\LoanApprovalTable.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\UpdateTypeOfLoan.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Carousel.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\AvailableLoans\Default.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Login\Default.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoanPackage.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Staff.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Staff\AdminDashboard.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.dll
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.pdb
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CopyComplete
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csprojAssemblyReference.cache
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\EmailError.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Validation.g.cshtml.cs
+E:\FOR CHECK\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerMain.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.deps.json
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.json
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.dev.json
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.dll
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csprojAssemblyReference.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CoreCompileInputs.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfoInputs.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.input.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.output.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorCoreGenerate.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\EmailError.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\ListOfUsers.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Recover.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\ListOfBranch.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApply.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerMain.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Validation.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\CreateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfTypeOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\LoanApprovalTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\UpdateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Carousel.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\AvailableLoans\Default.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Login\Default.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoanPackage.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Staff.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Staff\AdminDashboard.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CopyComplete
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ApprovedLoanTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\AF\New folder (2)\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\RejectedLoanTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.deps.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.runtimeconfig.dev.json
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\bin\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csprojAssemblyReference.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CoreCompileInputs.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfoInputs.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.AssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.input.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.TagHelpers.output.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorCoreGenerate.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\EmailError.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\ListOfUsers.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Recover.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Account\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Create.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\ListOfBranch.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Update.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApply.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerMain.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Validation.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ApprovedLoanTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\CreateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\ListOfTypeOfLoans.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\LoanApprovalTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\RejectedLoanTable.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\UpdateTypeOfLoan.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Carousel.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\AvailableLoans\Default.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Login\Default.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoanPackage.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Staff.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Staff\AdminDashboard.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cache
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.RazorTargetAssemblyInfo.cs
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.Views.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.dll
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.pdb
+C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CopyComplete
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListOfBranch\Default.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\LoanCalculator\Default.g.cshtml.cs

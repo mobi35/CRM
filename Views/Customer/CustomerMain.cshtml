@@ -1,0 +1,21 @@
+﻿@{
+
+    Layout = "_Layout";
+}
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    if (HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null && HttpContextAccessor.HttpContext.Session.GetString("AccountId").ToString() != "")
+    {
+    }
+    else
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+}
+
+    <h2>
+        This is the customer's page. <br />
+        Account ID : @HttpContextAccessor.HttpContext.Session.GetString("AccountId").ToString()
+    </h2>       

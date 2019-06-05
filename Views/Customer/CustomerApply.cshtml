@@ -1,0 +1,346 @@
+﻿@{
+ Layout = "_Layout";
+}
+@model AccountViewModel
+
+                <form  method="post" enctype="multipart/form-data" asp-controller="Customer" asp-action="CustomerApply">
+                @Html.HiddenFor(a => a.TypeOfLoan.RecordId)
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>@Html.DisplayFor(a => a.UserAccountDetail.Message)</div>
+                            <div asp-validation-summary="All"></div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <h2>Personal Details</h2>
+                        <hr />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.FirstName"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.FirstName" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.MiddleName"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.MiddleName" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.LastName"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.LastName" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.BirthDate"> </label>
+                        <input required placeholder="..." class="form-control" type="date" asp-for="PersonalAccountDetail.BirthDate" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.PlaceOfBirth"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.PlaceOfBirth" />
+                    </div>
+                    <div class="col-md-4">
+
+                        <label class="col-form-label-lg" - asp-for="PersonalAccountDetail.Gender"> </label>
+                        <br />
+                        <input type="radio" value="Male" asp-for="PersonalAccountDetail.Gender" /> <i style="font-size:20px;"><span class="fa fa-male"></span> Male </i>&nbsp;&nbsp;&nbsp; &nbsp;
+                        <input type="radio" value="Female" asp-for="PersonalAccountDetail.Gender" /> <i style="font-size:20px;"><span class="fa fa-female"></span> Female </i>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.Citizenship"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.Citizenship" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.MaritalStatus"> </label>
+                        <select class="form-control" asp-for="PersonalAccountDetail.MaritalStatus">
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Divorced</option>
+                            <option>Widowed</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.MothersMaiden"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.MothersMaiden" />
+                    </div>
+                    <div class="col-md-12">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.HomeAddress"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.HomeAddress" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.Zipcode"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.Zipcode" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.YearsOfStay"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.YearsOfStay" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.HomeOwnership"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.HomeOwnership" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.TelNo"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.TelNo" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.MobileNo"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.MobileNo" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="PersonalAccountDetail.ProvincialAddress"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="PersonalAccountDetail.ProvincialAddress" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="UserAccountDetail.Email"> </label>
+                        <input required placeholder="..." type="email" class="form-control" asp-for="UserAccountDetail.Email" />
+                    </div>
+
+                    <div class="col-md-12"><br /><br /></div>
+                    <div class="col-md-12 text-center">
+                        <h2>Loan Configuration</h2>
+                        <hr />
+                    </div>
+                    @Html.HiddenFor(a => a.TypeOfLoan.NameOfPackageLoan)
+                    @Html.HiddenFor(a => a.TypeOfLoan.RecordId)
+                    @Html.HiddenFor(a => a.TypeOfLoan.MaximumLoan)
+                    @Html.HiddenFor(a => a.TypeOfLoan.MinimumLoan)
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.AmountOfLoan"> </label>
+                        <input max="@Model.TypeOfLoan.MaximumLoan" min="@Model.TypeOfLoan.MinimumLoan" type="number" required placeholder="..." class="form-control" asp-for="LoanRecord.AmountOfLoan" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.PurposeOfLoan"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="LoanRecord.PurposeOfLoan" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.DesireTerm"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="LoanRecord.DesireTerm" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.LoanAmountAmortization"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="LoanRecord.LoanAmountAmortization" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.DesireTerm"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="LoanRecord.DesireTerm" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="LoanRecord.TypeOfLoan"> </label>
+                        <input value="@Model.TypeOfLoan.NameOfPackageLoan" readonly placeholder="..." class="form-control" asp-for="LoanRecord.TypeOfLoan" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="UserAccountDetail.Branch"> </label>
+
+                        <select required class="form-control" asp-for="UserAccountDetail.Branch">
+                           @await Component.InvokeAsync("ListOfBranch")
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="col-md-12"><br /><br /></div>
+                    <div class="col-md-12 text-center">
+                        <h2>Other Details</h2>
+                        <hr />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.ReferredBy"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.ReferredBy" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.TinNumber"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.TinNumber" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.SSSNumber"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.SSSNumber" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.EmployementStatus"> </label>
+                        <select id="employement" class="form-control" asp-for="GenericLoanField.EmployementStatus">
+                            <option>Unemployed</option>
+                            <option>Employed</option>
+                            <option>Freelancer</option>
+                        </select>
+                    </div>
+                <div  style="margin-left:5px" class="row" id="isEmployed"> 
+                    <div class="col-md-8">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.YearsOfCompany"> </label>
+                        <input  placeholder="..." class="form-control" asp-for="GenericLoanField.YearsOfCompany" />
+                    </div>
+
+                    <div class="col-md-12">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.CompanyAddress"> </label>
+                        <input  placeholder="..." class="form-control" asp-for="GenericLoanField.CompanyAddress" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.Position"> </label>
+                        <input  placeholder="..." class="form-control" asp-for="GenericLoanField.Position" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.AnnualIncome"> </label>
+                        <input  placeholder="..." class="form-control" asp-for="GenericLoanField.AnnualIncome" />
+                    </div>
+            </div>
+
+                    <div class="col-md-12">
+                        <br /><br />
+                        <h2 class="text-center"> Financial Details</h2>
+                        <hr />
+                    </div>
+
+                   
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.FinBusiness"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.FinBusiness" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.FinSpouse"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.FinSpouse" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.FinOthers"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.FinOthers" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.LessFood"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.LessFood" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.LessRent"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.LessRent" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.LessUtilities"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.LessUtilities" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.LessEduc"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.LessEduc" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.LessOthers"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.LessOthers" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.FinNet"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.FinNet" />
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <br /><br />
+                        <h2 class="text-center"> Credit Card Details</h2>
+                        <hr />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.Creditor"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.Creditor" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.CreditNumber"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.CreditNumber" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.CreditLimit"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.CreditLimit" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.CreditExpiration"> </label>
+                      <div class="row">
+                       <div class="col-md-6"> 
+                        <select class="form-control" name='expireMM' id='expireMM'>
+                            <option value='01'>January</option>
+                            <option value='02'>February</option>
+                            <option value='03'>March</option>
+                            <option value='04'>April</option>
+                            <option value='05'>May</option>
+                            <option value='06'>June</option>
+                            <option value='07'>July</option>
+                            <option value='08'>August</option>
+                            <option value='09'>September</option>
+                            <option value='10'>October</option>
+                            <option value='11'>November</option>
+                            <option value='12'>December</option>
+                            </select> 
+                              </div> 
+                        <div class="col-md-6"> 
+                        <select class="form-control" name='expireYY' id='expireYY'>
+                            <option value='19'>2019</option>
+                            <option value='20'>2020</option>
+                            <option value='21'>2021</option>
+                            <option value='22'>2022</option>
+                        </select> 
+                        </div> 
+                        </div> 
+
+    <input type="hidden" id="expirationField" asp-asp-for="GenericLoanField.CreditExpiration" maxlength="4"/>
+                    </div>
+                    <div class="col-md-8">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.Bank"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.Bank" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.CurrentChecking"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.CurrentChecking" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.Savings"> </label>
+                        <input required placeholder="..." class="form-control" asp-for="GenericLoanField.Savings" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="col-form-label-lg" asp-for="GenericLoanField.Attachments"></label>
+                        <div class="custom-file">
+                            <input asp-for="GenericLoanField.Attachments" class="form-control custom-file-input" />
+                            <label class="custom-file-label">Choose File..</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+
+                        <h2 class="text-center"><input type="submit" class="btn btn-primary" /></h2>
+                        <hr />
+                    </div>
+
+                </div>
+            </form>
+
+   <script>
+       $(document).ready(function() { 
+       if(  $('#employement').val() == "Unemployed"){ 
+       $("#isEmployed").hide();
+        }
+       $('#employement').change(function() {
+
+           if($('#employement').val() != "Unemployed"){
+               $('#isEmployed').show('slow');
+           }else {
+                $('#isEmployed').hide('slow');
+           }
+
+       });
+
+    
+    //FOR CREDIT CARD VALIDATION
+    var expiration = "";
+    expiration = $('#expireMM').val() + "/" +   $('#expireYY').val();
+    $('#expirationField').val(expiration);
+    $('#expireMM').change(function() {
+          expiration = $('#expireMM').val() + "/" +   $('#expireYY').val();
+            $('#expirationField').val(expiration);
+            });
+            $('#expireYY').change(function() {
+                expiration = $('#expireMM').val() + "/" +   $('#expireYY').val();
+            $('#expirationField').val(expiration);
+
+            });
+});
+
+   </script>

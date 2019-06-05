@@ -1,0 +1,208 @@
+﻿
+@using Newtonsoft.Json
+@using Microsoft.AspNetCore.Html
+@model IEnumerable<LoanViewModel>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+Calculate Loan
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Loan Calculator</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+  
+      <div class="modal-body">
+       
+       <script>
+
+function ComputeLoan() {
+
+ $('#loan-table').html("");
+ var amount = $('#desiredAmount').val();
+ var months = $('#desiredTerm').val();
+
+
+ var maxLoan = parseInt($('#max-loan').val());
+ var minLoan = parseInt($('#min-loan').val());
+ var max = '₱ ' + maxLoan.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+ var min = '₱ ' + minLoan.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+ if ($('select').val() == "") {
+  $('#type-validation').html("Please select the type of loan");
+  return false;
+ } else {
+  $('#type-validation').html("");
+ }
+
+
+ if (parseInt($('#min-loan').val()) - 1 >= parseInt($('#desiredAmount').val()) ||  parseInt($('#max-loan').val()) - 1 <= parseInt($('#desiredAmount').val()) ) {
+  $('#amount-validation').html("Minimum of " + min + " and Maximum of " + max);
+  return false;
+ } else if ($('#desiredAmount').val() == "") {
+  $('#amount-validation').html("Please write your desired amount");
+  return false;
+ } else {
+  $('#amount-validation').html("");
+ }
+
+ if (parseInt($('#desiredTerm').val()) >= 100 || parseInt($('#desiredTerm').val()) <= 0) {
+  $('#month-validation').html("Invalid Month ( 1 - 100 only)");
+  return false;
+ }
+ if ($('#desiredTerm').val() == "") {
+  $('#month-validation').html("Please write your desired term");
+  return false;
+ } else {
+  $('#month-validation').html("");
+ }
+
+
+ var interest_rate = $('#interest').val();
+ var interest = interest_rate * .01;
+ var payment = ((amount / months) + interest).toFixed(2);
+ var totalMonthly = (amount * Math.pow((interest / 1) + 1, (months)) *
+  interest / 1) / (Math.pow(interest / 1 + 1, (months)) - 1);
+
+ var f = new Array();
+ for (i = 0; i < months; i++) {
+  f[i] = new Array();
+  for (j = 0; j <= 1; j++) {
+   if (j == 0) {
+    f[i][j] = totalMonthly;
+    continue;
+   }
+
+   if (j == 1) {
+    f[i][j] = interest;
+    continue;
+   }
+  }
+ }
+
+ var table = document.createElement('TABLE');
+ table.className = "table table-hover table-sm";
+ let newRow = table.insertRow(0);
+
+ var cell1 = newRow.insertCell(0);
+ var cell2 = newRow.insertCell(1);
+ var cell3 = newRow.insertCell(2);
+ newRow.className = "table-active";
+ cell1.className = "thead-light"
+ cell1.innerHTML = "<b>Month</b>";
+ cell2.innerHTML = "<b>Interest</b>";
+ cell3.innerHTML = "<b>Amount</b>";
+ var count = 1;
+ for (s = 0; s < months; s++) {
+  let newRow = table.insertRow(-1);
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+  var cell3 = newRow.insertCell(2);
+
+  cell1.innerHTML = count;
+  var num = '₱ ' + totalMonthly.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+  cell2.innerHTML = interest * 100 + "%";
+  cell3.innerHTML = num;
+  count++;
+ }
+
+ let lastRow = table.insertRow(-1);
+ var lastCell1 = lastRow.insertCell(0);
+ var lastCell2 = lastRow.insertCell(1);
+ var lastCell3 = lastRow.insertCell(2);
+
+ lastCell1.innerHTML = "";
+ lastRow.className = "table-success";
+ var totalAmount = totalMonthly * months;
+ var num = '₱ ' + totalAmount.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+ lastCell2.innerHTML = "Total Growth";
+ lastCell3.innerHTML = num;
+
+ $('#loan-table').append(table);
+
+}
+
+</script>
+
+  <select required class="form-control" id="type-of-loan"> 
+      <option value="">Select Type Of Loan</option>
+    @{
+        foreach (var c in Model)
+        {
+            <option value="@c.TypeOfLoan.NameOfPackageLoan">@c.TypeOfLoan.NameOfPackageLoan</option>
+        }
+    }
+    
+  </select>
+   <div class="alert-danger"> <i id="type-validation" ></i></div>  
+    <input  id="interest" type="hidden" />
+    <input id="stack" type="hidden" />
+    <input id="min-loan" type="hidden" />
+    <input id="max-loan" type="hidden" />
+
+<div><br>    <b>Interest</b> : <i id="interest-value"></i> % <br>
+  
+      <b>Minimum Amount</b> : <i id="min-loan-value"></i> <br>
+       <b>Maximum Amount</b> : <i id="max-loan-value"></i> <br>
+       <br>
+</div>
+
+    <input required placeholder="Desired Amount" id="desiredAmount" class="form-control" type="number" />
+  <div class="alert-danger"> <i id="amount-validation" ></i></div>  
+     <input min = "20" max = "20" required placeholder="Desired Period" id="desiredTerm"  class="form-control" type="number" />
+  <div class="alert-danger"> <i id="month-validation" ></i></div> 
+  <hr>
+  
+  <div id="loan-table">
+
+  </div>
+
+
+      </div>
+      <div class="modal-footer">
+
+       <button  onclick="ComputeLoan()"  class="btn btn-success" ><span class="fa fa-calculator"> </span> Calculate</button>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+@{
+    var dataJson = new HtmlString(JsonConvert.SerializeObject(Model));
+}
+
+<script>  
+
+
+
+var obj = JSON.parse('@dataJson');
+
+$(document).ready(function() { 
+$('#type-of-loan').change(function(){ 
+ for (var i in obj) {
+     console.log(obj[i]);
+     if(obj[i].TypeOfLoan.NameOfPackageLoan == $('#type-of-loan').val() ){
+       
+        $('#interest').val(obj[i].TypeOfLoan.Interest);
+        $('#stack').val(obj[i].TypeOfLoan.Stack);
+        $('#min-loan').val(obj[i].TypeOfLoan.MinimumLoan);
+        $('#max-loan').val(obj[i].TypeOfLoan.MaximumLoan);
+
+       $('#interest-value').text(obj[i].TypeOfLoan.Interest);
+        $('#stack-value').text(obj[i].TypeOfLoan.Stack);
+        $('#min-loan-value').text(obj[i].TypeOfLoan.MinimumLoan);
+        $('#max-loan-value').text(obj[i].TypeOfLoan.MaximumLoan);
+        break;
+     }
+    }
+
+});
+});
+</script>

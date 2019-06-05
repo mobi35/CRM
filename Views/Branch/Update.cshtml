@@ -1,0 +1,48 @@
+﻿@using ActiveFinance1.Data.Model
+@model Branch
+
+
+@{
+    Layout = "_Staff";
+}
+
+
+<div class="container">
+
+    <div class="alert alert-danger validation" asp-validation-summary="All"></div>
+    <form asp-action="Update" asp-controller="Branch" method="post" role="form">
+        @Html.HiddenFor(a => a.RecordId)
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="BranchName"></label>
+                <input asp-for="BranchName" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label asp-for="BranchAddress"></label>
+                <input asp-for="BranchAddress" class="form-control" />
+            </div>
+
+
+        </div>
+        <input type="submit" class="btn btn-primary" />
+    </form>
+</div>
+
+<script>
+
+    if ($('.message').val() == "")
+    {
+      $('.message').hide();
+    }
+
+    if ($('.validation').text().trim() == "")
+    {
+      $('.validation').hide();
+    }
+
+
+    function Forgot() {
+        $('.Forgot').css('display', 'block');
+    }
+
+</script>

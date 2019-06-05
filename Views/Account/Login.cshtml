@@ -1,0 +1,82 @@
+﻿@using ActiveFinance1.Data.Model
+@model UserAccountDetail
+
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+   
+    <div style="width:60%; text-align:center;">
+        <input asp-for="@Model.Message" style="width:100%;font-size:11px"  disabled class="alert alert-danger message" />
+      
+      <div class="alert alert-danger validation" asp-validation-summary="All"></div>
+        <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
+            <div class="row">
+
+                <div style="display:block!important" class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fa fa-user"></span></div>
+                        <input placeholder="Account Id" asp-for="@Model.AccountId" class="form-control" />
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+
+                <div style="display:block!important" class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fa fa-lock"></span></div>
+                        <input placeholder="Password" type="password" asp-for="@Model.Password" class="form-control" />
+
+                    </div>
+                </div>
+               
+            </div>
+               <i><a onclick="Forgot();" href="#">Forgot password?</a></i>
+            <hr />
+            <div class="row">
+                <input type="submit" value="Login" class="btn btn-primary form-control" />
+            </div>
+        </form>
+     
+        <div style="display:none;" class="Forgot">
+            <hr />
+            <i>let us recover your account. Please provide us your email address.</i>
+            <form asp-action="SendEmail" asp-controller="Account" method="post">
+                <div class="row">
+                    <div style="display:block!important" class="col-md-6">
+                        <div class="input-group-append">
+                            <div class="input-group-text"><span class="fa fa-envelope"></span></div>
+                            <input required placeholder="Enter your email address" type="email" asp-for="@Model.Email" class="form-control" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary form-control" value="Reset" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script>
+   
+    if ($('.message').val() == "")
+    {
+      $('.message').hide();
+    }
+
+    if ($('.validation').text().trim() == "")
+    {
+      $('.validation').hide();
+    }
+
+
+    function Forgot() {
+        $('.Forgot').css('display', 'block');
+    }
+
+</script>
