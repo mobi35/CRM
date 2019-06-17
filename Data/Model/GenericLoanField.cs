@@ -12,6 +12,7 @@ namespace ActiveFinance1.Data.Model
     {
         [Key]
         public int RecordId { get; set; }
+        public int LoanId { get; set; }
         public string AccountId { get; set; }
         public string ReferredBy { get; set; }
         public string TinNumber { get; set; }
@@ -22,7 +23,7 @@ namespace ActiveFinance1.Data.Model
         public string CompanyAddress { get; set; }
         public string Position { get; set; }
         public double AnnualIncome { get; set; }
-       
+
         public string FinBusiness { get; set; }
         public string FinSpouse { get; set; }
         public string FinOthers { get; set; }
@@ -41,7 +42,8 @@ namespace ActiveFinance1.Data.Model
         public string CurrentChecking { get; set; }
         public string Savings { get; set; }
         [NotMapped]
-        public IFormFile Attachments { get; set; }
+        public List<IFormFile> Attachments { get; set; }
+        public virtual List<Attachments> ListOfAttachments { get; set; }
 
         public string AnswerField1 { get; set; }
         public string AnswerField2 { get; set; }

@@ -11,9 +11,9 @@ namespace ActiveFinance1.Data.Model
     {
         [Key]
         public int RecordId { get; set; }
-     
+
         public string AccountId { get; set; }
-    
+
         public string Password { get; set; }
         public string Role { get; set; }
         public int LoginAttempt { get; set; }
@@ -28,9 +28,11 @@ namespace ActiveFinance1.Data.Model
         public string Message { get; set; }
         [NotMapped]
         public string ConfirmPassword { get; set; }
-
-        public virtual PersonalAccountDetail PersonalAccountDetail { get; set; }
+        //public virtual UserPower UserPower { get; set; }
         public int PersonalAccountDetailId { get; set; }
+        [NotMapped]
+        public string OldPassword { get; set; }
+
 
 
     }

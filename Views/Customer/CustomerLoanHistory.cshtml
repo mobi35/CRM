@@ -1,0 +1,114 @@
+﻿@{
+
+    Layout = "_LayoutCustomer";
+  
+}
+@model IEnumerable<LoanViewModel>
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    if (HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null && HttpContextAccessor.HttpContext.Session.GetString("AccountId").ToString() != "")
+    {
+    }
+    else
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+}
+<table class="table table-striped table-bordered responsive no-wrap" style="width:100%;margin-top:5%;" id="userList">
+    <thead>
+        <tr>
+            <th>Type of Loan</th>
+            <th>Loan Amount</th>
+            <th>Term</th>
+               <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+           
+            foreach (var accountVM in Model)
+            {
+                <tr>
+                    <td>@accountVM.TypeOfLoan.NameOfPackageLoan </td>
+                    <td>@Html.Raw("P") @accountVM.LoanRecord.AmountOfLoan.ToString("N") </td>
+                    <td>@accountVM.LoanRecord.DesireTerm @Html.Raw(" months") </td>
+                       <td>
+                           @{ 
+                         
+                           if(accountVM.LoanRecord.IsApprove == "rejected" ){
+                          
+                             <a asp-route-id="@accountVM.LoanRecord.LoanId" asp-controller="Customer" asp-action="ModifyApplication"><span class="badge badge-danger">rejected</span> Modify Application</a>
+                           }else if(accountVM.LoanRecord.IsApprove == "approved" && accountVM.LoanRecord.ProcessTime < DateTime.Now ) {
+                             <span class="badge badge-success">approved</span>
+                           } else {
+                              <span class="badge badge-dark">pending</span>
+                           }
+                           }
+                           </td>
+                  <td> 
+                      <a asp-route-id="@accountVM.LoanRecord.LoanId" asp-controller="Customer" asp-action="CustomerApplicationView">View</a></td>
+              
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@section Scripts{ 
+
+<script>
+$(document).ready(function() {
+    $('#userList').DataTable( {
+
+       responsive: true,
+     
+     "lengthMenu": [50,100,500,1000,2000,5000,10000,50000,100000],
+         "order":[],
+         "sScrollX": "100%",
+         "scrollCollapse": true,
+    dom: 'lBfrtip',
+   buttons: [
+            {
+                 extend: 'print',
+
+                customize: function ( win ) {
+                    $(win.document.body)
+                        .css( {  'font-size': '10pt' } )
+                        .prepend(
+                            '<img style= src="~/Images/activefinancelogo.png"  style="position:absolute; height:500px; z-index:5000; width:500px; top:0; left:0;" />'
+                        );
+
+                    $(win.document.body).find( 'table' )
+                        .addClass( 'compact' )
+                        .css( 'font-size', 'inherit' );
+                }
+            },'excelHtml5',{
+                 extend: 'pdf',
+                download: 'open',
+            }
+        ]
+
+    } );
+} );
+
+</script>
+<script src="~/DataTables-1.10.18/js/jquery.dataTables.js"></script>
+<script src="~/DataTables-1.10.18/js/dataTables.buttons.min.js"></script>
+<script src="~/DataTables-1.10.18/js/buttons.print.min.js"></script>
+
+<script src="~/DataTables-1.10.18/js/pdfmake.min.js"></script>
+<script src="~/DataTables-1.10.18/js/vfs_fonts.js"></script>
+<script src="~/DataTables-1.10.18/js/buttons.html5.min.js"></script>
+<script src="~/DataTables-1.10.18/js/jszip.min.js"></script>
+<script src="~/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
+<script src="~/DataTables-1.10.18/js/responsive.bootstrap4.min.js"></script>
+
+<link href="~/DataTables-1.10.18/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="~/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="~/DataTables-1.10.18/css/button.css" rel="stylesheet" />
+<script src="~/DataTables-1.10.18/js/dataTables.bootstrap4.js"></script>
+
+}

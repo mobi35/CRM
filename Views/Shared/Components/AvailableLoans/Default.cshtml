@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<LoanAndTypeViewModel>
 
-
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
 @{
         int counter = 0;
         foreach(var c in Model){
@@ -10,7 +11,16 @@
             <div class="card-body">
                 <h5 class="card-title">@c.TypeOfLoan.NameOfPackageLoan</h5>
                 <p class="card-text">@c.TypeOfLoan.Description</p>
-                <a asp-action="CustomerApply" asp-route-id="@c.TypeOfLoan.RecordId" asp-controller="Customer" class="btn btn-primary">Apply Now</a>
+               @{
+                    if(Startup.IsSessionAvailable && HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null)
+                        {
+ <a asp-action="CustomerApplyOldForm" asp-route-id="@c.TypeOfLoan.RecordId" asp-controller="Customer" class="btn btn-primary">Apply Now</a>
+                        }else {
+ <a asp-action="CustomerApply" asp-route-id="@c.TypeOfLoan.RecordId" asp-controller="Customer" class="btn btn-primary">Apply Now</a>
+                        }
+               }
+               
+        
             </div>
         </div>
     </div>

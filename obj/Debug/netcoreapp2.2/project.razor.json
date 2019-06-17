@@ -192,7 +192,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Action"
@@ -2673,7 +2673,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
-        "Documentation": "\n            <summary>\n            A tag helper for prerendering JavaScript applications on the server.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
@@ -2700,7 +2700,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            Specifies the path to the JavaScript module containing prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ModuleName"
@@ -2713,7 +2713,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            If set, specifies the name of the CommonJS export that is the prerendering function to execute.\n            If not set, the JavaScript module's default CommonJS export must itself be the prerendering function.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ExportName"
@@ -2726,7 +2726,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            An optional JSON-serializable parameter to be supplied to the prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "CustomDataParameter"
@@ -2739,7 +2739,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The maximum duration to wait for prerendering to complete.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "TimeoutMillisecondsParameter"
@@ -2848,6 +2848,52 @@
           "Common.TypeName": "__Generated__LoginViewComponentTagHelper",
           "MVC.ViewComponent.Name": "Login"
         }
+      },
+      {
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__MyNotificationViewComponentTagHelper",
+        "AssemblyName": "ActiveFinance1",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:my-notification",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "id",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__MyNotificationViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "MyNotification"
+        }
       }
     ],
     "CSharpLanguageVersion": 703
@@ -2925,6 +2971,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Customer\\CustomerLoanHistory.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerLoanHistory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\CustomerApplyOldForm.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerApplyOldForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Account\\ListOfUsers.cshtml",
       "TargetPath": "Views\\Account\\ListOfUsers.cshtml",
       "FileKind": "mvc"
@@ -2965,13 +3021,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Loan\\DueLoans.cshtml",
+      "TargetPath": "Views\\Loan\\DueLoans.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Loan\\CreateTypeOfLoan.cshtml",
       "TargetPath": "Views\\Loan\\CreateTypeOfLoan.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Customer\\CustomerNotification.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerNotification.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\Components\\ListOfBranch\\Default.cshtml",
       "TargetPath": "Views\\Shared\\Components\\ListOfBranch\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\Components\\MyNotification\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\MyNotification\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\ModifyApplication.cshtml",
+      "TargetPath": "Views\\Customer\\ModifyApplication.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2982,6 +3058,16 @@
     {
       "FilePath": "Views\\Shared\\_Staff.cshtml",
       "TargetPath": "Views\\Shared\\_Staff.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_LayoutCustomer.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutCustomer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\CustomerDetails.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerDetails.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3005,8 +3091,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Loan\\PaidLoans.cshtml",
+      "TargetPath": "Views\\Loan\\PaidLoans.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\CustomerApplicationVIew.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerApplicationVIew.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\Components\\AvailableLoans\\Default.cshtml",
       "TargetPath": "Views\\Shared\\Components\\AvailableLoans\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Loan\\Application.cshtml",
+      "TargetPath": "Views\\Loan\\Application.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3022,6 +3123,11 @@
     {
       "FilePath": "Views\\Branch\\ListOfBranch.cshtml",
       "TargetPath": "Views\\Branch\\ListOfBranch.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\CustomerApplicationOld.cshtml",
+      "TargetPath": "Views\\Customer\\CustomerApplicationOld.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,54 @@
+@model IEnumerable<ModelMessage>
+@{
+
+    Layout = "_LayoutCustomer";
+    ViewData["Title"] = "Notifications";
+}
+
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    if (HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null && HttpContextAccessor.HttpContext.Session.GetString("AccountId").ToString() != "")
+    {
+    }
+    else
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+}
+
+<h4>New Notification</h4>
+
+@{
+  foreach(var newNotif in Model){
+
+    if(newNotif.Notification.IsRead == false){
+      <div class="alert alert-success" role="alert">
+       @newNotif.Notification.NotificationMessage
+   <a asp-controller="Customer" asp-action="ReadAlready" asp-route-id="@newNotif.Notification.RecordId" class="close"  aria-label="Close" > 
+    <span aria-hidden="true">&times;</span>
+ </a>
+
+      </div>
+    }
+
+  }
+}
+
+
+
+<h4>Past Notification</h4>
+
+@{
+  foreach(var newNotif in Model){
+
+    if(newNotif.Notification.IsRead == true){
+      <div class="alert alert-dark" role="alert">
+       @newNotif.Notification.NotificationMessage
+      </div>
+    }
+
+  }
+}
+

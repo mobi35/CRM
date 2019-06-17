@@ -5,22 +5,35 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using ActiveFinance1.ViewModel;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 namespace ActiveFinance1.Controllers
 {
     public class BranchController : Controller
     {
+        private readonly IAccountRepository _accountRepo;
+        private readonly IUserPower _userPower;
         private readonly IBranchRepository _branchRepository;
 
-        public BranchController(IBranchRepository branchRepository)
+        public BranchController(IAccountRepository accountRepo, IUserPower userPower, IBranchRepository branchRepository)
         {
+            _accountRepo = accountRepo;
+            _userPower = userPower;
             _branchRepository = branchRepository;
         }
-
         public IActionResult ListOfBranch()
         {
+            string accountId = HttpContext.Session.GetString("AccountId");
             var branch = _branchRepository.GetAll();
-            return View(branch);
+            UserPowerBranchViewModel accUserPowerVM = new UserPowerBranchViewModel
+            {
+                Branch = branch,
+                UserAccountDetail = _accountRepo.FindUser(a => a.AccountId == accountId),
+                UserPower = _userPower.GetIdBy(_accountRepo.FindUser(a => a.AccountId == accountId).RecordId)
+            };
+
+            return View(accUserPowerVM);
         }
 
         public IActionResult Create()
@@ -72,8 +85,9 @@ namespace ActiveFinance1.Controllers
                     return View(branch);
                 }
 
-                try { 
-                _branchRepository.Update(branch);
+                try
+                {
+                    _branchRepository.Update(branch);
                 }
                 catch (Exception e)
                 {

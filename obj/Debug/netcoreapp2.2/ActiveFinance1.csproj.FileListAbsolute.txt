@@ -212,3 +212,15 @@ C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFina
 C:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\ActiveFinance1.csproj.CopyComplete
 c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListOfBranch\Default.g.cshtml.cs
 c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\LoanCalculator\Default.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\Application.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerLoanHistory.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutCustomer.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetails.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerNotification.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\MyNotification\Default.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApplicationOld.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApplyOldForm.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\ModifyApplication.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerApplicationVIew.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\DueLoans.g.cshtml.cs
+c:\Users\Adrian Radores\Desktop\ActiveFinanceFiles\ActiveFinanceFiles\ActiveFinance1\obj\Debug\netcoreapp2.2\Razor\Views\Loan\PaidLoans.g.cshtml.cs

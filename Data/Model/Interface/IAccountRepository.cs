@@ -11,6 +11,6 @@ namespace ActiveFinance1.Data.Model.Interface
         IEnumerable<UserAccountDetail> FindWithPersonal(Func<UserAccountDetail, bool> predicate);
         void ResetLoginAttempt(Func<UserAccountDetail, bool> predicate);
 
-        
+        IEnumerable<UserAccountDetail> GetAllWithPersonal();
     }
 }

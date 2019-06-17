@@ -112,10 +112,7 @@
                         <label class="col-form-label-lg" asp-for="LoanRecord.PurposeOfLoan"> </label>
                         <input required placeholder="..." class="form-control" asp-for="LoanRecord.PurposeOfLoan" />
                     </div>
-                    <div class="col-md-4">
-                        <label class="col-form-label-lg" asp-for="LoanRecord.DesireTerm"> </label>
-                        <input required placeholder="..." class="form-control" asp-for="LoanRecord.DesireTerm" />
-                    </div>
+
                     <div class="col-md-4">
                         <label class="col-form-label-lg" asp-for="LoanRecord.LoanAmountAmortization"> </label>
                         <input required placeholder="..." class="form-control" asp-for="LoanRecord.LoanAmountAmortization" />
@@ -184,7 +181,7 @@
                     </div>
                     <div class="col-md-4">
                         <label class="col-form-label-lg" asp-for="GenericLoanField.AnnualIncome"> </label>
-                        <input  placeholder="..." class="form-control" asp-for="GenericLoanField.AnnualIncome" />
+                        <input  placeholder="..." type="number" class="form-control" asp-for="GenericLoanField.AnnualIncome" />
                     </div>
             </div>
 
@@ -299,7 +296,7 @@
                     <div class="col-md-4">
                         <label class="col-form-label-lg" asp-for="GenericLoanField.Attachments"></label>
                         <div class="custom-file">
-                            <input asp-for="GenericLoanField.Attachments" class="form-control custom-file-input" />
+                            <input  multiple asp-for="GenericLoanField.Attachments" class="form-control custom-file-input" />
                             <label class="custom-file-label">Choose File..</label>
                         </div>
                     </div>
@@ -311,9 +308,24 @@
 
                 </div>
             </form>
+@section Scripts { 
 
    <script>
-       $(document).ready(function() { 
+
+       $(document).ready(function() {
+
+           $('.custom-file-input').on("change",function() {
+                var fileLabel = $(this).next('.custom-file-label');
+                var files =$(this)[0].files;
+                if(files.length > 1){
+                    fileLabel.html(files.length + ' files selected');
+                }else if(files.length == 1) {
+                    fileLabel.html(files[0].name);
+                }
+
+
+           });
+
        if(  $('#employement').val() == "Unemployed"){ 
        $("#isEmployed").hide();
         }
@@ -344,3 +356,5 @@
 });
 
    </script>
+
+   }

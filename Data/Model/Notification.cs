@@ -13,7 +13,7 @@ namespace ActiveFinance1.Data.Model
         public string NotificationMessage { get; set; }
         public DateTime NotificationDate { get; set; }
         public string NotificationTo { get; set; }
-        public string IsRead { get; set; }
+        public bool IsRead { get; set; }
 
     }
 }

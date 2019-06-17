@@ -16,19 +16,70 @@ namespace ActiveFinance1.Data
             {
                 var context = serviceScope.ServiceProvider.GetService<AFDBContext>();
 
-                var justin = new UserAccountDetail { AccountId = "Custom", Password = "Custom", Branch = "Baguio", Email = "Maeee", LoginAttempt = 2, Role = "Customer" };
-                var burnik = new UserAccountDetail { AccountId = "Admin1", Password = "Admin1", Branch = "Baguio", Email = "Maeee", LoginAttempt = 0, Role = "Admin" };
-                var ellah = new UserAccountDetail { AccountId = "Loanpr", Password = "Loanpr", Branch = "Baguio", Email = "Maeee", LoginAttempt = 0, Role = "Loan Processor" };
 
-                var pers = new PersonalAccountDetail { AccountId = "Custom", FirstName = "Sansa", LastName = "Starl", MiddleName = "W" };
+                var burnik = new UserAccountDetail { AccountId = "Admin1", Password = "Admin1", Branch = "Baguio", Email = "Maeee", LoginAttempt = 0, Role = "Admin" };
+
                 var pers2 = new PersonalAccountDetail { AccountId = "Admin1", FirstName = "Adrian", LastName = "Espiel", MiddleName = "Radores" };
-                var pers3 = new PersonalAccountDetail { AccountId = "Loanpr", FirstName = "Looper", LastName = "Bran", MiddleName = "Stark" };
-                context.PersonalAccountDetails.Add(pers);
+
+                var powers = new UserPower { UserLevel = 1 };
+                context.UserPowers.Add(powers);
                 context.PersonalAccountDetails.Add(pers2);
-                context.PersonalAccountDetails.Add(pers3);
-                context.UserAccountDetails.Add(justin);
                 context.UserAccountDetails.Add(burnik);
-                context.UserAccountDetails.Add(ellah);
+
+
+
+                var f2 = new Attachments
+                {
+                    RecordId = 1,
+                    AccountId = "Admin1",
+                    File = "SSS FoXXrm",
+                };
+                var f4 = new Attachments
+                {
+                    RecordId = 1,
+                    AccountId = "Admin1",
+                    File = "BCCATEE",
+                };
+
+                var f3 = new Attachments
+                {
+                    RecordId = 1,
+                    AccountId = "Admin1",
+                    File = "SSS Form",
+                };
+
+                var f5 = new Attachments
+                {
+                    RecordId = 2,
+                    AccountId = "Admin1",
+                    File = "SXSS Form",
+                };
+                var f6 = new Attachments
+                {
+                    RecordId = 3,
+                    AccountId = "Admin1",
+                    File = "RDC Form",
+                };
+                var f7 = new Attachments
+                {
+                    RecordId = 3,
+                    AccountId = "Admin1",
+                    File = "BC Form",
+                };
+                context.Attachments.Add(f3);
+                context.Attachments.Add(f2);
+                context.Attachments.Add(f2);
+                context.Attachments.Add(f5);
+                context.Attachments.Add(f6);
+                context.Attachments.Add(f7);
+                var g1 = new GenericLoanField
+                {
+                    AccountId = "Admin1",
+                    LoanId = 1000001,
+                };
+
+
+                context.GenericLoanFields.Add(g1);
 
                 var loan1 = new LoanRecord
                 {
@@ -37,35 +88,7 @@ namespace ActiveFinance1.Data
                     AccountId = "Admin1",
                     DesireTerm = 20,
                     LoanAmountAmortization = "23",
-                    LoanId = "AASkkLKDJ",
-                    LoanMonth = 20,
-                    PurposeOfLoan = "No Cash",
-                    RemainingMonth = 17,
-                    TypeOfLoan = "SME Loan"
-                };
-
-                var loan2 = new LoanRecord
-                {
-                    AmountOfLoan = 22222,
-                    AccountId = "Custom",
-                    Branch = "Camarines Sure",
-                    DesireTerm = 22,
-                    LoanAmountAmortization = "255",
-                    LoanId = "asdas",
-                    LoanMonth = 20,
-                    PurposeOfLoan = "No Cash",
-                    RemainingMonth = 17,
-                    TypeOfLoan = "SME Loan"
-                };
-
-                var loan3 = new LoanRecord
-                {
-                    AmountOfLoan = 232000000,
-                    AccountId = "Loanpr",
-                    Branch = "Camarines Sure",
-                    DesireTerm = 22,
-                    LoanAmountAmortization = "255",
-                    LoanId = "AASkkLKDJ",
+                    LoanId = 1000001,
                     LoanMonth = 20,
                     PurposeOfLoan = "No Cash",
                     RemainingMonth = 17,
@@ -74,8 +97,6 @@ namespace ActiveFinance1.Data
 
 
                 context.LoanRecords.Add(loan1);
-                context.LoanRecords.Add(loan2);
-                context.LoanRecords.Add(loan3);
 
                 var branch1 = new Branch
                 {

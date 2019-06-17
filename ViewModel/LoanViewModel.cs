@@ -13,5 +13,10 @@ namespace ActiveFinance1.ViewModel
         public LoanRecord LoanRecord { get; set; }
 
         public TypeOfLoan TypeOfLoan { get; set; }
+        public UserAccountDetail UserAccountDetail { get; set; }
+
+        public UserPower UserPower { get; set; }
+
+        public PersonalAccountDetail PersonalAccountDetail { get; set; }
     }
 }

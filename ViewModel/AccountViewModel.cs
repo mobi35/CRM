@@ -10,7 +10,7 @@ namespace ActiveFinance1.ViewModel
 {
     public class AccountViewModel
     {
-      
+
         public UserAccountDetail UserAccountDetail { get; set; }
 
         public PersonalAccountDetail PersonalAccountDetail { get; set; }
@@ -18,7 +18,9 @@ namespace ActiveFinance1.ViewModel
         public GenericLoanField GenericLoanField { get; set; }
 
         public LoanRecord LoanRecord { get; set; }
+        public IEnumerable<LoanBalance> LoanBalances { get; set; }
 
         public TypeOfLoan TypeOfLoan { get; set; }
+        public UserPower UserPower { get; set; }
     }
 }

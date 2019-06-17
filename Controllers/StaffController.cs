@@ -17,16 +17,17 @@ namespace ActiveFinance1.Controllers
         {
             _accountDetailsRepository = accountDetailsRepository;
             _personalDetailRepository = personalDetailRepository;
-        } 
+        }
 
-           public IActionResult AdminDashboard(){
-            
+        public IActionResult AdminDashboard()
+        {
+
             return View();
         }
 
+        public IActionResult ListOfLoans()
+        {
 
-        public IActionResult ListOfLoans(){
-            
             return View();
         }
     }

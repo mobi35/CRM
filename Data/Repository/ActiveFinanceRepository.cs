@@ -55,6 +55,6 @@ namespace ActiveFinance1.Data.Repository
             Save();
         }
 
-       
+
     }
 }

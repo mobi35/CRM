@@ -30,16 +30,19 @@ namespace ActiveFinance1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AFDBContext>(options => options.UseInMemoryDatabase("AFDBContext"));
-            services.AddScoped<IAccountRepository,AccountDetailsRepository>();
+            services.AddScoped<IAccountRepository, AccountDetailsRepository>();
+            services.AddScoped<IUserPower, UserPowerRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<IBranchRepository, BranchRepository>();
             services.AddScoped<IPersonalDetailRepository, PersonalDetailRepository>();
             services.AddScoped<ITypeOfLoanRepository, TypeOfLoanRepository>();
             services.AddScoped<IGenericLoanFieldRepository, GenericLoanFieldRepository>();
             services.AddScoped<INotificationRepository, NotificationRepository>();
-            services.AddSingleton<IHttpContextAccessor,HttpContextAccessor >();
- 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IAttachmentRepository, AttachmentRepository>();
             services.AddSession(so => so.IdleTimeout = TimeSpan.FromSeconds(5000));
+            services.AddScoped<ILoanBalanceRepository, LoanBalanceRepository>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

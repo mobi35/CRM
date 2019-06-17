@@ -10,8 +10,9 @@ namespace ActiveFinance1.Data.Model
     {
         [Key]
         public int RecordId { get; set; }
-        public string LoanId { get; set; }
+        public int LoanId { get; set; }
         public string AccountId { get; set; }
+        public virtual List<LoanBalance> LoanBalances { get; set; }
         public string TypeOfLoan { get; set; }
         public double AmountOfLoan { get; set; }
         public string LoanAmountAmortization { get; set; }
@@ -20,6 +21,8 @@ namespace ActiveFinance1.Data.Model
         public int DesireTerm { get; set; }
         public string PurposeOfLoan { get; set; }
         public string Branch { get; set; }
+        public DateTime ProcessTime { get; set; }
         public string IsApprove { get; set; }
+        public bool IsActive { get; set; }
     }
 }

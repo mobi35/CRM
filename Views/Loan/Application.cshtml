@@ -1,0 +1,167 @@
+﻿@model AccountViewModel
+
+@{
+    Layout = "_Staff";
+    ViewData["Title"] = "Loan List";
+}
+
+<style>
+    label{
+        font-weight: bolder;
+    }
+</style>
+
+
+<div class="row">
+
+<div class="col-md-4">  <br>
+     <h3>Personal Details</h3>  <br>
+    <label>Fullname</label>
+    <h5>@Model.PersonalAccountDetail.FirstName @Model.PersonalAccountDetail.MiddleName  @Model.PersonalAccountDetail.LastName </h5>
+    <label asp-for="PersonalAccountDetail.BirthDate"></label>
+    <p>@Model.PersonalAccountDetail.BirthDate</p>
+     <label asp-for="PersonalAccountDetail.PlaceOfBirth"></label>
+    <p>@Model.PersonalAccountDetail.PlaceOfBirth</p>
+
+     <label asp-for="PersonalAccountDetail.Gender"></label>
+    <p>@Model.PersonalAccountDetail.Gender</p>
+     <label asp-for="PersonalAccountDetail.Citizenship"></label>
+    <p>@Model.PersonalAccountDetail.Citizenship</p>
+     <label asp-for="PersonalAccountDetail.MaritalStatus"></label>
+    <p>@Model.PersonalAccountDetail.MaritalStatus</p>
+     <label asp-for="PersonalAccountDetail.MothersMaiden"></label>
+    <p>@Model.PersonalAccountDetail.MothersMaiden</p>
+    <label asp-for="PersonalAccountDetail.HomeAddress"></label>
+    <p>@Model.PersonalAccountDetail.HomeAddress</p>
+    <label asp-for="PersonalAccountDetail.Zipcode"></label>
+    <p>@Model.PersonalAccountDetail.Zipcode</p>
+    <label asp-for="PersonalAccountDetail.YearsOfStay"></label>
+    <p>@Model.PersonalAccountDetail.YearsOfStay</p>
+    <label asp-for="PersonalAccountDetail.HomeOwnership"></label>
+    <p>@Model.PersonalAccountDetail.HomeOwnership</p>
+    <label asp-for="PersonalAccountDetail.TelNo"></label>
+    <p>@Model.PersonalAccountDetail.TelNo</p>
+    <label asp-for="PersonalAccountDetail.MobileNo"></label>
+    <p>@Model.PersonalAccountDetail.MobileNo</p>
+    <label asp-for="PersonalAccountDetail.ProvincialAddress"></label>
+    <p>@Model.PersonalAccountDetail.ProvincialAddress</p>
+    <label asp-for="PersonalAccountDetail.EmailAddress"></label>
+    <p>@Model.PersonalAccountDetail.EmailAddress</p>
+<h3>Attachments</h3>
+<form> 
+@{
+foreach(var attachment in Model.GenericLoanField.ListOfAttachments){
+<li> 
+<a  href = "../../../../Images/@attachment.UniqueName">@attachment.File</a> <input asp-for="@attachment.IsVerified" />
+</li>
+}
+}
+</ul>
+</form>
+<ul> 
+ </div> 
+
+<div class="col-md-4">  <br>
+     <h3>Loan Configuration</h3>  <br>
+    
+    <label asp-for="LoanRecord.AmountOfLoan"></label>
+    <p>@Model.LoanRecord.AmountOfLoan</p>
+      <label asp-for="LoanRecord.PurposeOfLoan"></label>
+    <p>@Model.LoanRecord.PurposeOfLoan</p>
+      <label asp-for="LoanRecord.DesireTerm"></label>
+    <p>@Model.LoanRecord.DesireTerm</p>
+      <label asp-for="LoanRecord.LoanAmountAmortization"></label>
+    <p>@Model.LoanRecord.LoanAmountAmortization</p>
+      <label asp-for="LoanRecord.TypeOfLoan"></label>
+    <p>@Model.LoanRecord.TypeOfLoan</p>
+      <label asp-for="LoanRecord.Branch"></label>
+    <p>@Model.LoanRecord.Branch</p>
+  <br>
+       <h3>Other Details</h3>  <br>
+        <label asp-for="GenericLoanField.ReferredBy"></label>
+    <p>@Model.GenericLoanField.ReferredBy</p>
+       <label asp-for="GenericLoanField.TinNumber"></label>
+    <p>@Model.GenericLoanField.TinNumber</p>
+       <label asp-for="GenericLoanField.SSSNumber"></label>
+    <p>@Model.GenericLoanField.SSSNumber</p>
+       <label asp-for="GenericLoanField.EmployementStatus"></label>
+    <p>@Model.GenericLoanField.EmployementStatus</p>
+
+ </div>
+
+<div class="col-md-4">  <br>
+     <h3>Financial Details</h3>
+      <br>
+    <label asp-for="GenericLoanField.FinBusiness"></label>
+    <p>@Model.GenericLoanField.FinBusiness</p>
+      <label asp-for="GenericLoanField.FinBusiness"></label>
+    <p>@Model.GenericLoanField.FinSpouse</p>
+        <label asp-for="GenericLoanField.FinOthers"></label>
+    <p>@Model.GenericLoanField.FinOthers</p>
+        <label asp-for="GenericLoanField.LessFood"></label>
+    <p>@Model.GenericLoanField.LessFood</p>
+        <label asp-for="GenericLoanField.LessRent"></label>
+    <p>@Model.GenericLoanField.LessRent</p>
+     <label asp-for="GenericLoanField.LessUtilities"></label>
+    <p>@Model.GenericLoanField.LessUtilities</p>
+     <label asp-for="GenericLoanField.LessEduc"></label>
+    <p>@Model.GenericLoanField.LessEduc</p>
+     <label asp-for="GenericLoanField.LessOthers"></label>
+    <p>@Model.GenericLoanField.LessOthers</p>
+   <label asp-for="GenericLoanField.FinNet"></label>
+    <p>@Model.GenericLoanField.FinNet</p>
+  <br>
+       <h3>Credit Card Details</h3>
+       <br>
+        <label asp-for="GenericLoanField.CreditCard"></label>
+    <p>@Model.GenericLoanField.CreditCard</p>
+      <label asp-for="GenericLoanField.CreditNumber"></label>
+    <p>@Model.GenericLoanField.CreditNumber</p>
+      <label asp-for="GenericLoanField.CreditLimit"></label>
+    <p>@Model.GenericLoanField.CreditLimit</p>
+      <label asp-for="GenericLoanField.CreditExpiration"></label>
+    <p>@Model.GenericLoanField.CreditExpiration</p>
+      <label asp-for="GenericLoanField.Bank"></label>
+    <p>@Model.GenericLoanField.Bank</p>
+       <label asp-for="GenericLoanField.CurrentChecking"></label>
+    <p>@Model.GenericLoanField.CurrentChecking</p>
+        <label asp-for="GenericLoanField.Savings"></label>
+    <p>@Model.GenericLoanField.Savings</p>
+
+  
+ </div>
+
+<div class="col-md-12">
+
+<hr>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Loan Due</th>
+        <th>Balance</th>
+        <th>Payment</th>
+         <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+@{
+  foreach(var balance in Model.LoanBalances){
+   <tr>
+      <td>@balance.DueDate.ToLongDateString()</td>
+      <td>@Html.Raw("P")@balance.Balance.ToString("N")</td>
+      <td>@balance.Payment</td>
+      <td>@balance.IsPaid</td>
+    </tr>
+  }
+}
+
+  </tbody>
+</table>
+
+</div>
+
+</div>
+
+
+

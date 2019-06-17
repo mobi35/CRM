@@ -14,11 +14,11 @@ namespace ActiveFinance1.Views.Shared.Components.Loans
         private readonly ITypeOfLoanRepository _typeOfLoan;
         public AvailableLoansViewComponent(ITypeOfLoanRepository typeOfLoan)
         {
-                _typeOfLoan = typeOfLoan;   
+            _typeOfLoan = typeOfLoan;
         }
-        public IViewComponentResult Invoke( ){
-           var all = _typeOfLoan.GetAll();
-
+        public IViewComponentResult Invoke()
+        {
+            var all = _typeOfLoan.GetAll();
             List<LoanAndTypeViewModel> loanAndTypeVM = new List<LoanAndTypeViewModel>();
             foreach (var c in all)
             {
@@ -27,8 +27,7 @@ namespace ActiveFinance1.Views.Shared.Components.Loans
                     TypeOfLoan = c
                 });
             }
-
             return View("Default", loanAndTypeVM);
-        }   
+        }
     }
 }

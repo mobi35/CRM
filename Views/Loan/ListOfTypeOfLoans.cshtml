@@ -5,8 +5,13 @@
     ViewData["Title"] = "Type of Loan List";
 }
 
-
+@{
+    if(Model.FirstOrDefault().UserPower.CanAddTypeOfLoan){
 <a asp-action="CreateTypeOfLoan" asp-controller="Loan" style="color:white; font-weight:bold;" class="btn btn-success"><span class="fa fa-plus-circle"></span> Create New Type of Loan</a>
+
+    }
+}
+
 <table class="table table-striped table-bordered responsive no-wrap" style="margin-top:5%;" id="userList">
     <thead>
         <tr>
@@ -16,7 +21,7 @@
             <th>Interest</th>
             <th>Minimum Loan</th>
             <th>Maximum Loan</th>
-            <td>Actions</td>
+            <td></td>
         </tr>
     </thead>
 
@@ -30,7 +35,22 @@
                     <td>@typeOfLoan.TypeOfLoan.Interest</td>
                     <td>@typeOfLoan.TypeOfLoan.MinimumLoan</td>
                     <td>@typeOfLoan.TypeOfLoan.MinimumLoan</td>
-                    <td><a asp-route-id="@typeOfLoan.TypeOfLoan.RecordId" asp-action="UpdateTypeOfLoan" asp-controller="Loan"><span style="font-size:30px;color:#007bff" class="fa fa-edit"></span></a> <a asp-action="DeleteTypeOfLoan" asp-controller="Loan" asp-route-id="@typeOfLoan.TypeOfLoan.RecordId" style="color:#d33333; font-size:30px" onclick="return confirm('Are you sure you want to delete this account?')"> <span class="fa fa-trash"></span></a></td>
+                    <td>
+                        @{ 
+if(Model.FirstOrDefault().UserPower.CanEditTypeOfLoan){
+<a asp-route-id="@typeOfLoan.TypeOfLoan.RecordId" asp-action="UpdateTypeOfLoan" asp-controller="Loan"> <span style="font-size:30px;color:#007bff" class="fa fa-edit"></span></a> 
+ 
+    }
+
+    if(Model.FirstOrDefault().UserPower.CanDeleteTypeOfLoan){
+ <a asp-action="DeleteTypeOfLoan" asp-controller="Loan" asp-route-id="@typeOfLoan.TypeOfLoan.RecordId" style="color:#d33333; font-size:30px" onclick="return confirm('Are you sure you want to delete this account?')"> <span class="fa fa-trash"></span></a>
+    
+    }
+}
+    
+    
+    </td>
+            
                 </tr>
             }
         }
@@ -77,14 +97,12 @@ $(document).ready(function() {
 <script src="~/DataTables-1.10.18/js/jquery.dataTables.js"></script>
 <script src="~/DataTables-1.10.18/js/dataTables.buttons.min.js"></script>
 <script src="~/DataTables-1.10.18/js/buttons.print.min.js"></script>
-
 <script src="~/DataTables-1.10.18/js/pdfmake.min.js"></script>
 <script src="~/DataTables-1.10.18/js/vfs_fonts.js"></script>
 <script src="~/DataTables-1.10.18/js/buttons.html5.min.js"></script>
 <script src="~/DataTables-1.10.18/js/jszip.min.js"></script>
 <script src="~/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
 <script src="~/DataTables-1.10.18/js/responsive.bootstrap4.min.js"></script>
-
 <link href="~/DataTables-1.10.18/css/responsive.bootstrap4.min.css" rel="stylesheet" />
 <link href="~/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
 <link href="~/DataTables-1.10.18/css/button.css" rel="stylesheet" />

@@ -12,7 +12,7 @@ namespace ActiveFinance1.Data.Repository
     {
         protected readonly AFDBContext _context;
 
-        public AccountDetailsRepository(AFDBContext context) : base (context)
+        public AccountDetailsRepository(AFDBContext context) : base(context)
         {
             _context = context;
         }
@@ -23,20 +23,23 @@ namespace ActiveFinance1.Data.Repository
               .Where(predicate).FirstOrDefault();
         }
 
-     
+
 
         public IEnumerable<UserAccountDetail> FindWithPersonal(Func<UserAccountDetail, bool> predicate)
         {
             return _context.UserAccountDetails
-                .Include(a => a.PersonalAccountDetail)
-                .Where(predicate);
+                             .Where(predicate);
         }
 
-    
+        public IEnumerable<UserAccountDetail> GetAllWithPersonal()
+        {
+            return _context.UserAccountDetails;
+        }
+
         public void ResetLoginAttempt(Func<UserAccountDetail, bool> predicate)
         {
-           var account = _context.UserAccountDetails
-                .Where(predicate).FirstOrDefault();
+            var account = _context.UserAccountDetails
+                 .Where(predicate).FirstOrDefault();
             account.LoginAttempt = 0;
             _context.Update(account);
         }

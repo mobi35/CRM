@@ -1,0 +1,32 @@
+@model UserAccountDetail
+@{
+
+    Layout = "_LayoutCustomer";
+}
+
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    if (HttpContextAccessor.HttpContext.Session.GetString("AccountId") != null && HttpContextAccessor.HttpContext.Session.GetString("AccountId").ToString() != "")
+    {
+    }
+    else
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+}
+
+<div class="row">
+    <div class="col-md-5">
+          <span style="color:red">@Html.DisplayFor(a => a.Message) </span> 
+        <form asp-controller="Account" asp-action="ChangePassword" method = "post">  
+       <input type = "hidden" asp-for="@Model.RecordId" />
+         <input placeholder="Old Password" type="password" asp-for="@Model.OldPassword" class="form-control" />
+        <input placeholder="New Password" type="password" asp-for="@Model.Password"  class="form-control" />
+          <input placeholder="Repeat New Password" type="password"asp-for="@Model.ConfirmPassword"  class="form-control" />
+    <br>
+    <input type="submit" class="btn btn-primary">
+  </form>
+    </div>
+</div>

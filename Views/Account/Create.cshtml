@@ -1,5 +1,5 @@
 ﻿@using ActiveFinance1.Data.Model
-@model AccountViewModel
+@model AccountUserPowerViewModel
 
 
 @{
@@ -62,6 +62,68 @@
                     </select>
                 </div>
             </div>
+            <br><br>
+            <h4>User Power</h4>
+            <hr>
+            <h5>Branch Power</h5>
+            <label asp-for="UserPower.CanViewBranch" > </label>
+            <input asp-for="UserPower.CanViewBranch" />
+
+             <label asp-for="UserPower.CanDeleteBranch" ></label>
+            <input asp-for="UserPower.CanDeleteBranch" />
+
+             <label asp-for="UserPower.CanEditBranch" ></label>
+            <input asp-for="UserPower.CanEditBranch" />
+
+             <label asp-for="UserPower.CanAddBranch" ></label>
+            <input asp-for="UserPower.CanAddBranch" />
+
+              <h5>Type of Loan Power</h5>
+            <label asp-for="UserPower.CanViewTypeOfLoan" ></label>
+            <input asp-for="UserPower.CanViewTypeOfLoan" />
+
+             <label asp-for="UserPower.CanDeleteTypeOfLoan" ></label>
+            <input asp-for="UserPower.CanDeleteTypeOfLoan" />
+
+             <label asp-for="UserPower.CanEditTypeOfLoan" ></label>
+            <input asp-for="UserPower.CanEditTypeOfLoan" />
+
+             <label asp-for="UserPower.CanAddTypeOfLoan" ></label>
+            <input asp-for="UserPower.CanAddTypeOfLoan" />
+
+             <h5>Loan Request Power</h5>
+            <label asp-for="UserPower.CanViewLoanRequest" ></label>
+            <input asp-for="UserPower.CanViewLoanRequest" />
+
+             <label asp-for="UserPower.CanApproveLoanRequest" ></label>
+            <input asp-for="UserPower.CanApproveLoanRequest" />
+
+                <label asp-for="UserPower.CanViewLoanApplication" ></label>
+            <input asp-for="UserPower.CanViewLoanApplication" />
+
+             <label asp-for="UserPower.CanRejectLoanRequest" ></label>
+            <input asp-for="UserPower.CanRejectLoanRequest" />
+
+             <label asp-for="UserPower.CanViewApprovedTable" ></label>
+            <input asp-for="UserPower.CanViewApprovedTable" />
+
+             <label asp-for="UserPower.CanViewRejectedLoanTable" ></label>
+            <input asp-for="UserPower.CanViewRejectedLoanTable" />
+
+           <h5>Loan Request Power</h2>
+            <label asp-for="UserPower.CanAddUser" ></label>
+            <input asp-for="UserPower.CanAddUser" />
+
+             <label asp-for="UserPower.CanDeleteUser" ></label>
+            <input asp-for="UserPower.CanDeleteUser" />
+
+             <label asp-for="UserPower.CanEditUser" ></label>
+            <input asp-for="UserPower.CanEditUser" />
+
+            <label asp-for="UserPower.CanViewUser" ></label>
+            <input asp-for="UserPower.CanViewUser" />
+        
+    <br>
             <input type="submit" class="btn btn-primary" />
         </form>
     </div>

@@ -19,8 +19,10 @@ namespace ActiveFinance1.Data
         public DbSet<PersonalAccountDetail> PersonalAccountDetails { get; set; }
         public DbSet<GenericLoanField> GenericLoanFields { get; set; }
         public DbSet<TypeOfLoan> TypeOfLoans { get; set; }
+        public DbSet<Attachments> Attachments { get; set; }
         public DbSet<LoanRecord> LoanRecords { get; set; }
+        public DbSet<LoanBalance> LoanBalances { get; set; }
         public DbSet<Notification> Notifications { get; set; }
-
+        public DbSet<UserPower> UserPowers { get; set; }
     }
 }

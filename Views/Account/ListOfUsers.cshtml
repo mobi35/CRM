@@ -1,13 +1,25 @@
-﻿@model IEnumerable<ActiveFinance1.ViewModel.AccountViewModel>
+﻿@model IEnumerable<AccountUserPowerViewModel>
 
 @{
     Layout = "_Staff";
     ViewData["Title"] = "Account List";
+
+  
+
+
 }
 
 
+@{
+
+      if(Model.FirstOrDefault().UserPower.CanAddUser){
 <a asp-action="Create" asp-controller="Account" style="color:white; font-weight:bold;" class="btn btn-success"><span class="fa fa-plus-circle"></span> Create New Employee</a>
-    <table class="table table-striped table-bordered responsive no-wrap" style="margin-top:5%;" id="userList">
+   
+    }
+}
+
+
+    <table class="table table-striped table-bordered responsive no-wrap" style="width:100%;margin-top:5%;" id="userList">
         <thead>
             <tr>
                 <th>Account Id</th>
@@ -15,7 +27,7 @@
                 <th>Email</th>
                 <th>Name</th>
                 <th>Branch</th>
-                <td>Actions</td>
+              <th></th>
             </tr>
         </thead>
 
@@ -28,7 +40,25 @@
                             <td>@accountVM.UserAccountDetail.Email</td>
                             <td>@accountVM.PersonalAccountDetail.LastName , @accountVM.PersonalAccountDetail.FirstName - @accountVM.PersonalAccountDetail.LastName </td>
                             <td>@accountVM.UserAccountDetail.Branch </td>
-                            <td><a asp-route-id="@accountVM.UserAccountDetail.RecordId" asp-action="Update" asp-controller="Account"><span style="font-size:30px;color:#007bff" class="fa fa-edit"></span></a> <a asp-action="Delete" asp-controller="Account" asp-route-id="@accountVM.UserAccountDetail.RecordId" style="color:#d33333; font-size:30px" onclick="return confirm('Are you sure you want to delete this account?')"> <span class="fa fa-trash"></span></a></td>
+                            <td>
+
+   
+@{
+if(!Model.FirstOrDefault().UserPower.CanEditUser){
+ <a asp-route-id="@accountVM.UserAccountDetail.RecordId" asp-action="Update" asp-controller="Account"><span style="font-size:30px;color:#007bff" class="fa fa-edit"></span></a>
+      }
+}
+@{
+     if(Model.FirstOrDefault().UserPower.CanDeleteUser){
+ <a asp-action="Delete" asp-controller="Account" asp-route-id="@accountVM.UserAccountDetail.RecordId" style="color:#d33333; font-size:30px" onclick="return confirm('Are you sure you want to delete this account?')"> <span class="fa fa-trash"></span></a>
+        }
+}
+      
+        
+                </td> 
+                            
+           
+                       
                         </tr>
                 }
             }

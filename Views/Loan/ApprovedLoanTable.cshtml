@@ -15,7 +15,7 @@
             <th>Type of Loan</th>
             <th>Loan Amount</th>
             <th>Term</th>
-
+            <th>Action</th>
         </tr>
     </thead>
 
@@ -30,6 +30,7 @@
                     <td>@accountVM.TypeOfLoan.NameOfPackageLoan / @accountVM.TypeOfLoan.NameOfPackageLoan </td>
                     <td>@accountVM.LoanRecord.AmountOfLoan / @accountVM.LoanRecord.AmountOfLoan </td>
                     <td>@accountVM.LoanRecord.DesireTerm / @accountVM.LoanRecord.DesireTerm </td>
+                  <td> <a asp-route-id="@accountVM.LoanRecord.LoanId" asp-controller="Loan" asp-action="Application">Approve</a></td>
                 </tr>
             }
         }

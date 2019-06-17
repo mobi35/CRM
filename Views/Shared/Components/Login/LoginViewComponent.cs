@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 
 namespace ActiveFinance1.Views.Shared.Components.Login
 {
-  
 
     public class LoginViewComponent : ViewComponent
     {
 
         public LoginViewComponent()
         {
-        
+
         }
         public IViewComponentResult Invoke()
         {

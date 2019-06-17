@@ -8,6 +8,6 @@ namespace ActiveFinance1.ViewModel
 {
     public class BranchViewModel
     {
-        public Branch Branch{ get; set; }
+        public Branch Branch { get; set; }
     }
 }

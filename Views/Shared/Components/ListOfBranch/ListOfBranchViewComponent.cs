@@ -14,17 +14,20 @@ namespace ActiveFinance1.Views.Shared.Components.Loans
         private readonly IBranchRepository _typeOfBranch;
         public ListOfBranchViewComponent(IBranchRepository typeOfBranch)
         {
-                _typeOfBranch = typeOfBranch;   
+            _typeOfBranch = typeOfBranch;
         }
-        public IViewComponentResult Invoke( ){
-           var all = _typeOfBranch.GetAll();
-           List<BranchViewModel> branchViewModel = new List<BranchViewModel>();
-           foreach(var c in all){
-            branchViewModel.Add(new BranchViewModel{
-                Branch = c
-            });
-           }
+        public IViewComponentResult Invoke()
+        {
+            var all = _typeOfBranch.GetAll();
+            List<BranchViewModel> branchViewModel = new List<BranchViewModel>();
+            foreach (var c in all)
+            {
+                branchViewModel.Add(new BranchViewModel
+                {
+                    Branch = c
+                });
+            }
             return View("Default", branchViewModel);
-        }   
+        }
     }
 }

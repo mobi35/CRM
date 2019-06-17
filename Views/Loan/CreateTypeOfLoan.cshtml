@@ -8,10 +8,8 @@
    
 
 <div class="container">
-
     <div class="alert alert-danger validation" asp-validation-summary="All"></div>
     <form enctype="multipart/form-data" asp-action="CreateTypeOfLoan" asp-controller="Loan" method="post" role="form">
-
         <div class="row">
             <div class="col-md-4">
                 <label asp-for="TypeOfLoan.NameOfPackageLoan"></label>
@@ -47,14 +45,10 @@
                     <label class="custom-file-label">Choose File..</label>
                 </div>
             </div>
-
-
         </div>
         <input type="submit" class="btn btn-primary" />
     </form>
 </div>
-
-
 @section Scripts {
     <script>
         $(document).ready(function () {
